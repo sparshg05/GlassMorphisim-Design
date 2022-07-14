@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Fredoka+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+body{
+    background-image: linear-gradient(to right, rgb(38, 114, 185),rgb(240, 94, 232),rgb(243, 11, 11));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+}
+.circle1{
+    background: blue;
+    top: -72px;
+    right: -72px;
+    animation: circle1 10s linear alternate infinite;
+}
+@keyframes circle1{
+    100%{
+        top: 0px;
+    }
+}
+.circle2{
+    background: red;
+    bottom: -66px;
+    left: -70px;
+    animation: circle2 10s linear alternate infinite;
+}
+@keyframes circle2{
+    100%{
+        bottom: 0px;
+    }
+}
+.form{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    height: 450px;
+    width: 450px;
+    box-shadow: 0 32px 66px 0 rgb(0 0 0 / 10%);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+h1{
+    color: white;
+    /* font-weight: bolder; */
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 40px;
+    margin-top: 65px;
+    font-size: 2.4rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type=email],
+input[type=password],
+button{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 21px 0 rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    width: 66%;
+    padding:11px;
+    margin: 10px;
+    
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    cursor: pointer;
+    background: rgb(243, 30, 15);
+    color: white;
+}
+.forgot-signup{
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    margin-top: 12px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+}
